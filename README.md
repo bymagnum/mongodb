@@ -28,9 +28,9 @@ use admin
 
 <pre>
 db.createUser({
-user: "Admin",
-pwd: passwordPrompt(),
-roles: [{ role: "userAdminAnyDatabase", db: "admin"}, "readWriteAnyDatabase"]
+  user: "Admin",
+  pwd: passwordPrompt(),
+  roles: [{ role: "userAdminAnyDatabase", db: "admin"}, "readWriteAnyDatabase"]
 })
 </pre>
 
@@ -47,7 +47,11 @@ sudo nano /etc/mongod.conf
 Найти
 <pre>
 security:
-authorization: enabled
+  authorization: enabled
+   
+net:
+  port: 27017
+  bindIp: 127.0.0.1,ip_server
 </pre>
 
 Перезагрузить
