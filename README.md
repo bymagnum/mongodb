@@ -53,6 +53,7 @@ authorization: enabled
 Перезагрузить
 <pre>
 sudo systemctl restart mongod
+sudo systemctl status mongod
 </pre>
 
 Посмотреть 
