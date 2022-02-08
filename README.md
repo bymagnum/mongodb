@@ -18,6 +18,7 @@ sudo systemctl enable mongod
 Вход
 <pre>
 mongo
+mongo --authenticationDatabase "admin" -u "Admin" -p
 </pre>
 
 Переключиться в базу admin
