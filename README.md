@@ -58,6 +58,7 @@ net:
 <pre>
 sudo systemctl restart mongod
 sudo systemctl status mongod
+sudo lsof -i | grep mongo
 </pre>
 
 Посмотреть 
