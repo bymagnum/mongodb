@@ -33,6 +33,11 @@ roles: [{ role: "userAdminAnyDatabase", db: "admin"}, "readWriteAnyDatabase"]
 })
 </pre>
 
+Выход
+<pre>
+quit()
+</pre>
+
 Открыть конфиг
 <pre>
 sudo nano /etc/mongod.conf
