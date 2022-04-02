@@ -26,11 +26,20 @@ mongo --authenticationDatabase "admin" -u "Admin" -p
 use admin
 </pre>
 
+Создать Администратора:
 <pre>
 db.createUser({
   user: "Admin",
   pwd: passwordPrompt(),
   roles: [{ role: "userAdminAnyDatabase", db: "admin"}, "readWriteAnyDatabase"]
+})
+</pre>
+Создать Пользователя:
+<pre>
+db.createUser({
+  user: "binance",
+  pwd: passwordPrompt(),
+  roles: [{ role: "readWrite", db: "binance"}]
 })
 </pre>
 
